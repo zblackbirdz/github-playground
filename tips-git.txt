@@ -1,0 +1,70 @@
+### git ###
+
+# create a new repository
+git init
+
+# add a file to the repository
+- edit a file
+
+# status
+git status
+
+# add to staging area
+git add <filename>
+ or
+git add --all
+ or
+git add *
+ or
+git add /static/*.css
+
+# ignore certain files ...
+- create .gitignore
+- add list of files - either filenames or filetypes or directories
+- if you have git active, you need to update git.
+    git add .
+    git rm -r --cached .
+    git add .
+    - optional:
+    git commit -m "fixed untracked files"
+    git push
+
+# commit
+git commit -m "..."
+
+# stage & commit
+git commit -am "..."
+
+# push to github - not yet listed in github
+- github.com - create repository, but choose push an existing repository
+echo "# <project name>" >> README.md
+- edit the README.md and tidy up - remove spaces/quotes/etc
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zblackbirdz/<repository-name>.git
+git push -u origin master
+
+# push to github
+git push
+
+# pull from github
+git pull
+
+## branches ...
+
+# list branches
+git branch
+
+# new branch
+git branch <new-branch>
+
+# switch branch
+git check out <branch-name>
+
+# delete a local branch
+git branch -d <branch-name>
+
+# merge branches
+git branch <branch-a>
+git branch merge <branch-b>
