@@ -68,3 +68,7 @@ git branch -d <branch-name>
 # merge branches
 git branch <branch-a>
 git branch merge <branch-b>
+
+
+# messed up the merged and you've reverted back. however, you cannot update the remote ...
+git push origin <branch> -f
