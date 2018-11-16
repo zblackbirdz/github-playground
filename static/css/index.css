@@ -1,0 +1,91 @@
+body {
+  font-family: arial;
+  font-size: 15px;
+}
+
+header, nav, main, section, aside, footer {
+  border: 1px dotted silver ;
+  margin: 1em ;
+  padding: 1em;
+}
+
+main {
+  display: block;  /* sigh! IE doesn't know it is a block element ... */
+}
+
+li {
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+}
+
+video {
+  width: 100% ;
+}
+
+form ul {
+  list-style: none;
+}
+form ul li {
+  margin-top: 0.75em;
+  margin-bottom:0.75em;
+  padding: 0.5em;
+  border-bottom: 1px dotted grey;
+}
+form ul li:nth-of-type(2n) {
+  background: lightslategrey;
+  color: white;
+}
+
+
+input, textarea, select, button {
+  padding: 0.5em 0.75em;
+  border-radius: 0.3em;
+  border: 1px solid silver;
+  outline: 0;
+}
+input[type=radio] ,
+input[type=checkbox] {
+  padding: 2px;
+  vertical-align: middle;
+  margin: -2px 0.25em 0 0.75em ;
+}
+
+form ul li label {
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+input:focus {
+  border-color: green;
+  background: lightgreen;
+}
+input:invalid {
+  border-color: red;
+  background: pink;
+}
+
+button:hover {
+  background-color: orange;
+}
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: teal;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+aside a::before {
+  content: "\21d2 ";
+}
+
+p::selection {
+  color: pink;
+  background: grey;
+}
