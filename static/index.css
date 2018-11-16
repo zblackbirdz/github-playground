@@ -1,0 +1,10 @@
+body {
+  font-family: arial;
+  font-size: 15px;
+}
+
+header, nav, main, section, aside, footer {
+  border: 1px dotted silver ;
+  margin: 1em ;
+  padding: 1em;
+}
