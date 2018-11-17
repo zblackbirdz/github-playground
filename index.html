@@ -10,179 +10,298 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link type="text/css" rel="stylesheet" href="static/css/index.css">
+  <link type="text/css" rel="stylesheet" href="static/css/media.css">
 
   <meta name="google" content="notranslate">
 </head>
 
 <body>
-  <header>
-    <h1>Hello, world!</h1>
-  </header>
-  <nav>
-    navigation items here ...
-  </nav>
-  <main>
-    <article id="section1">
-      <h2>Title (h2)</h2>
-      <p>Some more text here ... </p>
-      <section id="section2">
-        <h3>Title (h3)</h3>
-        <p>Some more text here ... </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </section>
-      <section id="section3">
-        <h3>Title (h3)</h3>
-        <p>Some more text here ... </p>
-        <p>Some more text here ... </p>
-        <h4>Title (h4)</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-      <section>
-        <h2>Video</h2>
-        <video controls="controls">
-          <source src="static/video/star_trails.mp4" type="video/mp4" />
-          <source src="static/video/star_trails.webm" type="video/webm" />
-          <source src="static/video/star_trails.mpeg" type="video/mpeg" />
-        </video>
-      </section>
-      <section>
-        <h2>Audio</h2>
-        New Zealand:<br />
-        <audio controls src="static/audio/anthem-new-zealand-4235.mp3"></audio>
-        <br />
-        <br />
-        Ireland:<br />
-        <audio controls src="static/audio/anthem-ireland-4205.mp3"></audio>
-      </section>
-      <section>
-        <h2>Form</h2>
-        <form>
-          <i>NB: not all input types are supported by all browsers - check with <a href="http://caniuse.com">caniuse.com</a></i><br />
-          <ul>
-            <li>Text:<br /><input name="name" type="text" placeholder="Name"></li>
-            <li>Password:<br /><input name="password" type="password" placeholder="Password"></li>
-            <li>Email:<br /><input name="email" type="email" placeholder="Email"></li>
-            <li>Search:<br /><input name="search" type="search" placeholder="Search"></li>
-            <li>Tel:<br /><input name="tel" type="tel" placeholder="Tel"></li>
-            <li>URL:<br /><input name="url" type="url" placeholder="URL"></li>
-            <li>Date (datetime is not supported):<br /><input name="date" type="date" placeholder="Date"></li>
-            <li>Month:<br /><input name="month" type="month" placeholder="Month"></li>
-            <li>Week:<br /><input name="week" type="week" placeholder="Week"></li>
-            <li>Time:<br /><input name="time" type="time" placeholder="Time"></li>
-            <li>Number:<br /><input name="number" type="number" placeholder="Number"></li>
-            <li>Range:<br /><input name="range" type="range" min="0" max="10" step="1"></li>
-            <li>Range (with tick marks):<br /><input name="range" type="range" list="tickmarks" min="0" max="10">
-              <datalist id="tickmarks">
-                <option value="0" label="0"></option>
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10" label="10">
-              </datalist>
-            </li>
-            <li>File:<br /><input name="file" type="file" placeholder="File"></li>
-            <li><br /></li>
-            <li>
-              Radios (no label tag - click on "o" part only):<br />
-              <input name="colour" type="radio" value="red"> Red
-              <input name="colour" type="radio" color="blue"> Blue
-              <input name="colour" type="radio" color="green"> Green
-            </li>
-            <li>
-              Radios (with label tag - click on "o" or text):<br />
-              <label><input name="colour" type="radio" value"yellow"> Yellow</label>
-              <label><input name="colour" type="radio" color="brown"> Brown</label>
-              <label><input name="colour" type="radio" color="purple"> Purple</label>
-            </li>
-            <li>
-              Checkboxes (no label tag - click on "o" part only):<br />
-              <input name="food" type="checkbox" value="meat"> Meat
-              <input name="food" type="checkbox" color="egg"> Egg
-              <input name="food" type="checkbox" color="cheese"> Cheese
-            </li>
-            <li>
-              Checkboxes (with label tag - click on "o" or text):<br />
-              <label><input name="food" type="checkbox" value="fish"> Fish</label>
-              <label><input name="food" type="checkbox" color="fruit"> Fruit</label>
-              <label><input name="food" type="checkbox" color="veges"> Veges</label>
-            </li>
-            <li>Textarea:<br /><textarea name="description"></textarea></li>
-            <li>Datalist (single value only, optgroup not supported):<br />
-              <input name="country" list="countries" placeholder="Country">
-              <datalist id="countries">
-                <option value=""></option>
-                <option value="Australia">
-                <option value="Ireland">
-                <option value="New Zealand">
-                <option value="United Kingdom">
-              </datalist>
-            </li>
-            <li>Select (single value):<br />
-              <select name="scountry1">
-                <option value=""></option>
-                <option value="Australia">Australia</option>
-                <option value="Ireland">Ireland</option>
-                <option value="New Zealand">New Zealand</option>
-                <option value="United Kingdom">United Kingdom</option>
-              </select>
-            </li>
-            <li>Select (multiple value):<br />
-              <select name="scountry2" multiple>
-                <option value="Australia">Australia</option>
-                <option value="Ireland">Ireland</option>
-                <option value="New Zealand">New Zealand</option>
-                <option value="United Kingdom">United Kingdom</option>
-              </select>
-            </li>
-            <li>Select (optgroup):<br />
-              <select name="scountry3">
-                <option value=""></option>
-                <optgroup label="Southern hemisphere">
+  <div class="container">
+    <header>
+      <h1>Hello, world!</h1>
+    </header>
+    <nav>
+      navigation items here ...
+    </nav>
+    <nav><b>In this page: </b>
+      <a href="#section-text">Text</a> |
+      <a href="#section-video">Video</a> |
+      <a href="#section-audio">Audio</a> |
+      <a href="#section-form">Form</a> |
+      <a href="#section-flexbox">Flexbox</a> |
+      <a href="#section-grid-regular">Grid (regular)</a> |
+      <a href="#section-grid-mixed">Grid (mixed)</a>
+    </nav>
+    <main>
+      <article>
+        <section id="section-text">
+          <h2>Text</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <section id="section2">
+            <h3>Title (h3)</h3>
+            <p class="screen-only">Some more text here ... (screen only)</p>
+            <p>NB: page's background colour changes when width < 800px</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </section>
+          <section id="section3">
+            <h3>Title (h3)</h3>
+            <p>Some more text here ... </p>
+            <p>Some more text here ... </p>
+            <h4>Title (h4)</h4>
+            <p><b>Lorem ipsum dolor</b> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <i>Duis aute irure dolor</i> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, <a href="#top">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in <small>reprehenderit in voluptate</small> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                </ul>
+              </li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            </ul>
+            <hr>
+            <ol>
+              <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                </ol>
+              </li>
+              <li>Excepteur sint occaecat cupidatat non proident</li>
+              <li>Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+            </ol>
+          </section>
+        </section>
+
+        <section id="section-video">
+          <h2>Video</h2>
+          <video controls="controls">
+            <source src="static/video/star_trails.mp4" type="video/mp4" />
+            <source src="static/video/star_trails.webm" type="video/webm" />
+            <source src="static/video/star_trails.mpeg" type="video/mpeg" />
+          </video>
+        </section>
+
+        <section id="section-audio">
+          <h2>Audio</h2>
+          New Zealand:<br />
+          <audio controls src="static/audio/anthem-new-zealand-4235.mp3"></audio>
+          <br />
+          <br />
+          Ireland:<br />
+          <audio controls src="static/audio/anthem-ireland-4205.mp3"></audio>
+        </section>
+
+        <section id="section-form">
+          <h2>Form</h2>
+          <form>
+            <i>NB: not all input types are supported by all browsers - check with <a href="http://caniuse.com">caniuse.com</a></i><br />
+            <ul>
+              <li>Text:<br /><input name="name" type="text" placeholder="Name"></li>
+              <li>Password:<br /><input name="password" type="password" placeholder="Password"></li>
+              <li>Email:<br /><input name="email" type="email" placeholder="Email"></li>
+              <li>Search:<br /><input name="search" type="search" placeholder="Search"></li>
+              <li>Tel:<br /><input name="tel" type="tel" placeholder="Tel"></li>
+              <li>URL:<br /><input name="url" type="url" placeholder="URL"></li>
+              <li>Date (datetime is not supported):<br /><input name="date" type="date" placeholder="Date"></li>
+              <li>Month:<br /><input name="month" type="month" placeholder="Month"></li>
+              <li>Week:<br /><input name="week" type="week" placeholder="Week"></li>
+              <li>Time:<br /><input name="time" type="time" placeholder="Time"></li>
+              <li>Number:<br /><input name="number" type="number" placeholder="Number"></li>
+              <li>Range:<br /><input name="range" type="range" min="0" max="10" step="1"></li>
+              <li>Range (with tick marks):<br /><input name="range" type="range" list="tickmarks" min="0" max="10">
+                <datalist id="tickmarks">
+                  <option value="0" label="0"></option>
+                  <option value="1">
+                  <option value="2">
+                  <option value="3">
+                  <option value="4">
+                  <option value="5">
+                  <option value="6">
+                  <option value="7">
+                  <option value="8">
+                  <option value="9">
+                  <option value="10" label="10">
+                </datalist>
+              </li>
+              <li>File:<br /><input name="file" type="file" placeholder="File"></li>
+              <li><br /></li>
+              <li>
+                Radios (no label tag - click on "o" part only):<br />
+                <input name="colour" type="radio" value="red"> Red
+                <input name="colour" type="radio" color="blue"> Blue
+                <input name="colour" type="radio" color="green"> Green
+              </li>
+              <li>
+                Radios (with label tag - click on "o" or text):<br />
+                <label><input name="colour" type="radio" value"yellow"> Yellow</label>
+                <label><input name="colour" type="radio" color="brown"> Brown</label>
+                <label><input name="colour" type="radio" color="purple"> Purple</label>
+              </li>
+              <li>
+                Checkboxes (no label tag - click on "o" part only):<br />
+                <input name="food" type="checkbox" value="meat"> Meat
+                <input name="food" type="checkbox" color="egg"> Egg
+                <input name="food" type="checkbox" color="cheese"> Cheese
+              </li>
+              <li>
+                Checkboxes (with label tag - click on "o" or text):<br />
+                <label><input name="food" type="checkbox" value="fish"> Fish</label>
+                <label><input name="food" type="checkbox" color="fruit"> Fruit</label>
+                <label><input name="food" type="checkbox" color="veges"> Veges</label>
+              </li>
+              <li>Textarea:<br /><textarea name="description"></textarea></li>
+              <li>Datalist (single value only, optgroup not supported):<br />
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                  <option value=""></option>
+                  <option value="Australia">
+                  <option value="Ireland">
+                  <option value="New Zealand">
+                  <option value="United Kingdom">
+                </datalist>
+              </li>
+              <li>Select (single value):<br />
+                <select name="scountry1">
+                  <option value=""></option>
                   <option value="Australia">Australia</option>
-                  <option value="New Zealand">New Zealand</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Peru">Peru</option>
-                </optgroup>
-                <optgroup label="Northern hemisphere">
-                  <option value="Germany">Germany</option>
                   <option value="Ireland">Ireland</option>
-                  <option value="Spain">Spain</option>
+                  <option value="New Zealand">New Zealand</option>
                   <option value="United Kingdom">United Kingdom</option>
-                </optgroup>
-              </select>
-            </li>
-            <li>Button - submit:<br /><button type="submit">Submit</button></li>
-            <li>Button - reset:<br /><button type="reset">Reset</button></li>
-            <li>Button ... <br /><button type="button">Button</button></li>
-            <li>Input Button - submit <br /><input type="submit" value="Submit"></li>
-            <li>Input Button - reset <br /><input type="reset" value="Reset"></li>
-            <li>Input Button ... <br /><input type="button" value="Button"></li>
-        </form>
-      </section>
-    </article>
-    <aside>
-      aside content here ...
-      <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-      </ul>
-    </aside>
-  </main>
-  <footer>
-    footer content here ...
-  </footer>
+                </select>
+              </li>
+              <li>Select (multiple value):<br />
+                <select name="scountry2" multiple>
+                  <option value="Australia">Australia</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                </select>
+              </li>
+              <li>Select (optgroup):<br />
+                <select name="scountry3">
+                  <option value=""></option>
+                  <optgroup label="Southern hemisphere">
+                    <option value="Australia">Australia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Peru">Peru</option>
+                  </optgroup>
+                  <optgroup label="Northern hemisphere">
+                    <option value="Germany">Germany</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Spain">Spain</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                  </optgroup>
+                </select>
+              </li>
+              <li>Button - submit:<br /><button type="submit">Submit</button></li>
+              <li>Button - reset:<br /><button type="reset">Reset</button></li>
+              <li>Button ... <br /><button type="button">Button</button></li>
+              <li>Input Button - submit <br /><input type="submit" value="Submit"></li>
+              <li>Input Button - reset <br /><input type="reset" value="Reset"></li>
+              <li>Input Button ... <br /><input type="button" value="Button"></li>
+          </form>
+        </section>
+
+        <section id="section-flexbox">
+          <h2>Flexbox</h2>
+          <div class="container-flexbox">
+            <div>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>B. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>C. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>D. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>E. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>F. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>G. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>H. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>I. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>J. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>K. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>L. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>M. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>N. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>O. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>P. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>Q. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>R. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>S. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>T. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>U. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>V. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>W. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>X. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>Y. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>Z. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+          </div>
+        </section>
+
+        <section id="section-grid-regular">
+          <h2>Grid - regular layout:</h2>
+          <div class="container-grid-regular">
+            <div>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>B. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>C. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</div>
+            <div>D. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </div>
+            <div>E. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>F. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>G. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>H. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>I. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>J. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>K. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>L. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>M. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>N. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>O. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>P. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>Q. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>R. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>S. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>T. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>U. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>V. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+            <div>W. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+            <div>X. sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>Y. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+            <div>Z. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+          </div>
+        </section>
+
+        <section id="section-grid-mixed">
+          <h2>Grid - mixed layout:</h2>
+          <div class="container-grid-mixed">
+            <div class="a">A. Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+            <div class="b">B. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+            <div class="c">C. exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+            <div class="d">D. Excepteur sint occaecat cupidatat non proident, </div>
+            <div class="e">E. Sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+          </div>
+        </section>
+
+      </article>
+      <aside>
+        aside content here ...
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      footer content here ...
+    </footer>
+  </div><!-- end container -->
 </body>
 
 </html>

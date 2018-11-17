@@ -72,3 +72,14 @@ git branch merge <branch-b>
 
 # messed up the merged and you've reverted back. however, you cannot update the remote ...
 git push origin <branch> -f
+#then update master
+git checkout master
+git merge <other branch>
+git status
+git add .
+git commit -m "..."
+git push
+# now update <other branch>
+git check <other branch>
+git rebase <master branch>
+git push
