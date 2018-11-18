@@ -68,6 +68,7 @@ git check out <branch-name>
 # delete a local branch
 git branch -d <branch-name>
 
+
 # merge branches. see: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 git checkout master
 git merge <branch-name>

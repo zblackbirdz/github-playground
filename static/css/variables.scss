@@ -4,6 +4,16 @@ $border-colour: silver;
 $header-colour: green;
 $li-colour: blue;
 
+@mixin pstyle {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  margin: 1rem 0 1.25rem 0;
+  padding-left: 1rem;
+  border-left: 3px dotted $border-colour;
+  color: $pcolour;
+}
+
+
 
 /* ** box model **
   Apply a natural box layout model to all elements
@@ -29,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $header-colour;
 }
 p {
-    color: $pcolour ;
+  @include pstyle ;
 }
 
 #section2 {
