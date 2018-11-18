@@ -1,0 +1,44 @@
+body {
+  padding-top: 6rem;
+}
+body {
+  font-size: 15px;
+}
+section {
+  border: 1px dotted silver;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.row {
+  margin: 1em;
+}
+.row .row {
+  margin: 0.5em;
+}
+[class*="col-"] {
+    border: 1px solid rgba(86, 61, 124, .2);
+    padding: 1em;
+}
+
+button.not-bs,
+input[type=button].not-bs,
+input[type=submit].not-bs,
+input[type=reset].not-bs {
+  text-align: center ;
+  min-width: 8em ;
+}
+
+
+button.not-bs:hover,
+input[type=button].not-bs:hover,
+input[type=submit].not-bs:hover,
+input[type=reset].not-bs:hover {
+  background-color: silver ;
+}
+
+.btn-secondary.active {
+  border-color: green !important;
+  color: black !important;
+  background: white !important;
+}

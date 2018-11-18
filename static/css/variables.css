@@ -1,0 +1,379 @@
+/* ** box model **
+  Apply a natural box layout model to all elements
+   - in other words, when working out the width of the elements, ignore borders/padding - just say what you want!
+   - margins are added to the width though ...
+   - see: http://wtfhtmlcss.com/ and http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html,
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial,sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: green;
+}
+
+p {
+  color: orange;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+}
+
+header, nav, main, section, aside, footer {
+  border: 1px dotted silver;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+main {
+  display: block;
+  /* sigh! IE doesn't know it is a block element ... */
+}
+
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+video {
+  width: 100%;
+}
+
+form ul {
+  list-style: none;
+}
+
+form ul li {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  border-bottom: 1px dotted silver;
+}
+
+form ul li:nth-of-type(2n) {
+  background: lightslategrey;
+  color: white;
+}
+
+input, textarea, select, button {
+  padding: 0.5em 0.75em;
+  border-radius: 0.3em;
+  border: 1px solid silver;
+  outline: 0;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  padding: 2px;
+  vertical-align: middle;
+  margin: -2px 0.25em 0 0.75em;
+}
+
+form ul li label {
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+input:focus {
+  border-color: green;
+  background: lightgreen;
+}
+
+input:invalid {
+  border-color: red;
+  background: pink;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: teal;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+aside a::before {
+  content: "\21d2 ";
+}
+
+p::selection {
+  color: pink;
+  background: grey;
+}
+
+.container-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-flexbox > div {
+  background: lightslategrey;
+  margin: 1%;
+  padding: 1em;
+  width: 18%;
+}
+
+/* Grid - regular layout */
+.container-grid-regular {
+  display: -ms-grid;
+  display: grid;
+  /* non-IE browsers and Edge understands the following few lines */
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  grid-column-gap: 1%;
+  row-gap: 1em;
+  /* IE 10/11 kind of does css grid - but using an older specs ... so use ms specific tags
+    IE 10/11 does not have auto-placement ... hence having to specify exactly the columns and rows ...
+    auto = make the boxes in the same row have the same height.
+  */
+  -ms-grid-columns: 19% 1% 19% 1% 19% 1% 19% 1% 19%;
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto 1em auto 1em auto 1em auto;
+}
+
+/*
+    following code is for IE 10/11.
+    - row count are odd numbers (even are gutters)
+    - colum count are odd numbers (event are gutters)
+    - - yes, you have to write out each cell's row and column position ... I know it is ugly.
+  */
+.container-grid-regular > div:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.container-grid-regular > div:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.container-grid-regular > div:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.container-grid-regular > div:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.container-grid-regular > div:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.container-grid-regular > div:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.container-grid-regular > div:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.container-grid-regular > div:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.container-grid-regular > div:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.container-grid-regular > div:nth-child(13) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.container-grid-regular > div:nth-child(14) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+
+.container-grid-regular > div:nth-child(15) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 9;
+}
+
+.container-grid-regular > div:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div:nth-child(17) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.container-grid-regular > div:nth-child(18) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+
+.container-grid-regular > div:nth-child(19) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.container-grid-regular > div:nth-child(20) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 9;
+}
+
+.container-grid-regular > div:nth-child(21) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div:nth-child(22) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+
+.container-grid-regular > div:nth-child(23) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+}
+
+.container-grid-regular > div:nth-child(24) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 7;
+}
+
+.container-grid-regular > div:nth-child(25) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 9;
+}
+
+.container-grid-regular > div:nth-child(26) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+}
+
+.container-grid-regular > div {
+  background: lightslategrey;
+  padding: 1em;
+  min-height: 2em;
+  height: auto;
+}
+
+/* Grid - mixed layout
+   nb: IE 10/11 does grids slightly differently ...
+*/
+.container-grid-mixed {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1%;
+  grid-column-gap: 1%;
+  grid-row-gap: 1em;
+  -ms-grid-columns: 14% 1% 24% 1% 60%;
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-columns: 14% 24% 60%;
+  background-color: #fff;
+  color: #444;
+}
+
+/* IE 10//11: don't forget to count the gutter(s) */
+.container-grid-mixed .a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+}
+
+.container-grid-mixed .b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+}
+
+.container-grid-mixed .c {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.container-grid-mixed .d {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+}
+
+.container-grid-mixed .e {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  -ms-grid-row-span: 1;
+}
+
+/* Non IE 10/11 */
+.container-grid-mixed .a {
+  grid-column: 1 / 3;
+}
+
+.container-grid-mixed .b {
+  grid-column: 3 / auto;
+  grid-row: 1 / 3;
+}
+
+.container-grid-mixed .c {
+  grid-column: 1 / auto;
+}
+
+.container-grid-mixed .d {
+  grid-column: 2 / auto;
+}
+
+.container-grid-mixed .e {
+  grid-column: 1 / 4;
+}
+
+.container-grid-mixed > div {
+  background: lightslategrey;
+  padding: 1em;
+}
